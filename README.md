@@ -15,3 +15,15 @@
 
 ## T-Tests on Suspension Coils (Deliverable 3)
 * Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
+### Overall T-test across all manufacturing lots
+![image](https://user-images.githubusercontent.com/84869167/137652428-c75c7c0f-5fc7-4955-9e55-dae7a553724f.png)
+
+### T-test for Lot 1
+![image](https://user-images.githubusercontent.com/84869167/137652494-59498ab9-0fed-46bc-95dd-9d6a70d00280.png)
+
+### T-test for Lot 2
+![image](https://user-images.githubusercontent.com/84869167/137652528-0232f85e-198d-4f46-96c1-5fa0302c28d9.png)
+
+### T-test for Lot 3
+![image](https://user-images.githubusercontent.com/84869167/137652549-fafbfea4-2ac6-42b6-a9c0-70cd35a4110c.png)
