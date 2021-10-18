@@ -1,4 +1,4 @@
-#Deliverable 1 
+# Deliverable 1 
 #3 Use the library() function to load the dplyr package.
 library(dplyr)
 library(tidyverse)
@@ -16,3 +16,18 @@ print("#######################################################")
 print("#  Linear Regression Model Summary for MechaCar data  #")
 print("#######################################################")
 summary(MechaCar_lm)
+
+
+#Deliverable 2
+#2 Import and read in the Suspension_Coil.csv file as a table.
+Suspension_Coil <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors = F)
+head(Suspension_Coil)
+
+#3 Create a total_summary data frame using the summarize() function to get the mean, median, variance, and standard #deviation of the suspension coil's PSI column.
+total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI),SD=sd(PSI), .groups = 'keep') 
+total_summary
+
+#4 Creates a lot_summary data frame using the group_by() and the summarize() functions to group each manufacturing lot by #the mean, median, variance, and standard deviation of the suspension coil's PSI column
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create lot summary table
+lot_summary
+
